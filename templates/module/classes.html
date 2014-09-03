@@ -33,11 +33,7 @@
         {{#properties.length}}
         <section class="properties {{hasProperties}}">
 
-            <h3>Properties
-                {{#properties.length}}
-                    {{> toggle_scope}}
-                {{/properties.length}}
-            </h3>
+            <h3>Properties</h3>
 
             {{#properties}}
                 {{> variable}}
@@ -49,11 +45,7 @@
         {{#methods.length}}
         <section class="methods">
 
-            <h3>Methods
-                {{#methods.length}}
-                    {{> toggle_scope}}
-                {{/methods.length}}
-            </h3>
+            <h3>Methods</h3>
 
             {{#methods}}
                 {{> function}}
