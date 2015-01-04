@@ -3,11 +3,11 @@
 
     <h3>Variables Summary</h3>
 
-    {{#module.variables}}
     <ul>
+        {{#module.variables}}
         <li style="{{#isPrivate}} display: none{{/isPrivate}}"><a href="#{{ctx.scope.owner}}-{{ctx.name}}">{{ctx.name}} (...)</a></li>
+        {{/module.variables}}
     </ul>
-    {{/module.variables}}
 
 </section>
 {{/module.variables.length}}

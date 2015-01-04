@@ -1,40 +1,19 @@
-{{#module.classes.length}}
-<section id="classes">
+{{#module.mixins.length}}
+<section id="mixins">
 
-    <h2>Classes</h2>
+    <h2>Mixins</h2>
 
-    {{#module.classes}}
+    {{#module.mixins}}
     <div class="well" style="margin-bottom: 40px">
         <div class="member public" style="background-color: #e8e8e8">
 
-            <span class="pull-right scope">Constructor</span>
+            <span class="pull-right scope">Object</span>
 
-            <h4 id="class-{{constructor.ctx.name}}" style="font-weight: 600">
-                {{constructor.ctx.name}}
+            <h4 id="mixin-{{object.ctx.name}}" style="font-weight: 600">
+                {{object.ctx.name}}
             </h4>
 
-            {{#constructor.extends}}
-            <div style="margin-bottom: .5em">
-                <span class="scope">(extends <a href="#class-{{.}}">{{.}}</a>)</span>
-            </div>
-            {{/constructor.extends}}
-
-            {{#constructor.mixes}}
-            <div style="margin-bottom: .5em">
-                <span class="scope">(mixes <a href="#mixin-{{.}}">{{.}}</a>)</span>
-            </div>
-            {{/constructor.mixes}}
-
-
-            <em>{{{constructor.description.full}}}</em>
-
-            <dl>
-                {{#constructor.params}}
-                <dt>{{name}} <span class="label label-info pull-left">{{types}}</span></dt>
-                <dd>{{{description}}}</dd>
-                {{/constructor.params}}
-            </dl>
-
+            <em>{{{object.description.full}}}</em>
 
             {{#properties.length}}
             <section>
@@ -88,7 +67,7 @@
         {{/methods.length}}
 
     </div>
-    {{/module.classes}}
+    {{/module.mixins}}
 
 </section>
-{{/module.classes.length}}
+{{/module.mixins.length}}

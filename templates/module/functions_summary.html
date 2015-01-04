@@ -3,11 +3,11 @@
 
     <h3>Functions Summary</h3>
 
-    {{#module.functions}}
     <ul>
+        {{#module.functions}}
         <li style="{{#isPrivate}} display: none{{/isPrivate}}"><a href="#{{ctx.scope.owner}}-{{ctx.name}}">{{ctx.name}}</a></li>
+        {{/module.functions}}
     </ul>
-    {{/module.functions}}
 
 </section>
 {{/module.functions.length}}

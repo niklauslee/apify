@@ -1,0 +1,13 @@
+{{#module.mixins.length}}
+<section id="">
+
+    <h2>Mixins Summary</h2>
+
+    <ul>
+        {{#module.mixins}}
+        <li><a href="#mixin-{{object.ctx.name}}">{{object.ctx.name}}</a></li>
+        {{/module.mixins}}
+    </ul>
+
+</section>
+{{/module.mixins.length}}

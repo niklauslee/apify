@@ -25,6 +25,8 @@
                 "additional": "/../templates/module/additional.html",
                 "classes": "/../templates/module/classes.html",
                 "classes_summary": "/../templates/module/classes_summary.html",
+                "mixins": "/../templates/module/mixins.html",
+                "mixins_summary": "/../templates/module/mixins_summary.html",
                 "code": "/../templates/module/code.html",
                 "dependencies": "/../templates/module/dependencies.html",
                 "deprecation_message": "/../templates/module/deprecation_message.html",
