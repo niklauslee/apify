@@ -1,0 +1,13 @@
+{{#module.classes.length}}
+<section id="">
+
+    <h2>Classes Summary</h2>
+
+    {{#module.classes}}
+    <ul>
+        <li><a href="#class-{{constructor.ctx.name}}">{{constructor.ctx.name}}</a></li>
+    </ul>
+    {{/module.classes}}
+
+</section>
+{{/module.classes.length}}

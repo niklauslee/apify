@@ -24,12 +24,14 @@
             "partials": {
                 "additional": "/../templates/module/additional.html",
                 "classes": "/../templates/module/classes.html",
+                "classes_summary": "/../templates/module/classes_summary.html",
                 "code": "/../templates/module/code.html",
                 "dependencies": "/../templates/module/dependencies.html",
                 "deprecation_message": "/../templates/module/deprecation_message.html",
                 "example": "/../templates/module/example.html",
                 "examples": "/../templates/module/examples.html",
                 "function": "/../templates/module/function.html",
+                "functions_summary": "/../templates/module/functions_summary.html",
                 "modifiers": "/../templates/module/modifiers.html",
                 "module": "/../templates/module/module.html",
                 "params": "/../templates/module/params.html",
@@ -38,7 +40,7 @@
                 "tags": "/../templates/module/tags.html",
                 "toggle_scope": "/../templates/module/toggle_scope.html",
                 "variable": "/../templates/module/variable.html",
-                
+                "variables_summary": "/../templates/module/variables_summary.html",
                 "filelist": "/../templates/navigation/filelist.html",
                 "navbar": "/../templates/navigation/navbar.html"
             }

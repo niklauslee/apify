@@ -1,0 +1,13 @@
+{{#module.functions.length}}
+<section id="">
+
+    <h3>Functions Summary</h3>
+
+    {{#module.functions}}
+    <ul>
+        <li style="{{#isPrivate}} display: none{{/isPrivate}}"><a href="#{{ctx.scope.owner}}-{{ctx.name}}">{{ctx.name}}</a></li>
+    </ul>
+    {{/module.functions}}
+
+</section>
+{{/module.functions.length}}
