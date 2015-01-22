@@ -6,7 +6,7 @@
         {{#isDeprecated}}
             <span class="label label-deprecated label-inverse">deprecated</span>
         {{/isDeprecated}}
-        {{ctx.name}} {{> modifiers}}
+        {{ctx.name}}
         <a class="anchor" href="#{{ctx.scope.owner}}-{{ctx.name}}" id="{{ctx.scope.owner}}-{{ctx.name}}"><span class="icon-link"></span></a>
     </h4>
 
@@ -14,8 +14,12 @@
 
     <div class="description">{{{description.full}}}</div>
 
-    {{> tags}}
+    <dl>
+        {{#memberTypes}}
+        <dt>Type: <span class="label label-info">{{value}}</span></dt>
+        {{/memberTypes}}
+    </dl>
+
     {{> examples}}
     {{> additional}}
-    {{> code}}
 </div>
